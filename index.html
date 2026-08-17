@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <h2>Formulario TREE</h2>
+    
+    <main>
+        <form action="">
+            <div>
+                <div>
+                    <label for="Nombre">Nombre</label>
+                    <input type="text" id="Nombre" name="Nombre" placeholder="ej. Andres" required>
+                </div>
+                <div>
+                    <label for="Apellido">Apellido</label>
+                    <input type="text" id="Apellido" name="Apellido" placeholder="ej. Ocampo" required>
+                </div>
+                <div>
+                    <label for="TipoDeDocumento">Tipo de documento</label>
+                    <select name="TipoDeDocumento" id="TipoDeDocumento">
+                        <option value="">Seleccione el tipo de documento</option>
+                        <option value="CC">Cédula de Ciudadanía</option>
+                        <option value="TI">Tarjeta de Identidad</option>
+                        <option value="CE">Cédula de Extranjería</option>
+                        <option value="PAS">Pasaporte</option>
+                    </select>
+                </div>
+            </div>
+
+            <div>
+                <label for="Fecha">Fecha de nacimiento</label>
+                <input type="date" id="Fecha" name="Fecha" placeholder="ej. 06/07/2026" required>    
+            </div>
+
+            <div>
+                <label for="Numero">Telefono</label>
+                <input type="text" id="Numero" name="Numero" placeholder="ej. 321412423" required>
+            </div>
+
+            <div>
+                <label for="Email">Email</label>
+                <input type="email" id="Email" name="Email" placeholder="ej. andres@gmail.com" required>
+            </div>
+
+            <div>
+                <label for="Pais">Pais</label>
+                <input type="text" id="Pais" name="Pais" placeholder="ej. Colombia" required>
+            </div>
+
+            <div>
+                <label for="Ciudad">Ciudad</label>
+                <input type="text" id="Ciudad" name="Ciudad" placeholder="ej. Bogota" required>
+            </div>
+
+            <div>
+                <input type="checkbox" id="terminos" name="terminos">
+                <label for="terminos">Acepto los términos y condiciones</label>
+            </div>
+
+            <button type="submit">Enviar datos</button>
+        </form>
+    </main>
+</body>
+</html>
